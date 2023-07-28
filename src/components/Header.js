@@ -5,8 +5,9 @@ import SearchField from './SearchField';
 
 const menuItems = [
   { label: `Home`, url: `/` },
-  { label: `Dashboard`, url: `/dashboard/analytics` },
-  { label: `Newsletter`, url: `/newsletter` },
+  { label: `Shop`, url: `/Shop/analytics` },
+  { label: `Collection`, url: `/Collection` },
+  { label: `ContactUs`, url: `/contact` },
 ];
 
 const Header = () => {
