@@ -1,0 +1,49 @@
+/* Video.css */
+.video-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease;
+  }
+  
+  .video-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .video-container img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .video-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .video-info h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .video-info .views,
+  .video-info .likes,
+  .video-info .month {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .video-info .likes {
+    color: #e91e63; /* Pink color for likes */
+  }
+  

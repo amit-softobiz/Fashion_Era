@@ -5,7 +5,7 @@ import SearchField from './SearchField';
 
 const menuItems = [
   { label: `Home`, url: `/` },
-  { label: `Shop`, url: `/Shop/analytics` },
+  { label: `Shop`, url: `/shop` },
   { label: `Collection`, url: `/Collection` },
   { label: `ContactUs`, url: `/contact` },
 ];
