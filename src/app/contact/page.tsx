@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import React from "react";
@@ -8,15 +8,6 @@ import * as Yup from "yup";
 import { useRouter } from "next/navigation";
 export default function contact() {
   const router = useRouter();
-
-  // const [user, setUser] = React.useState({
-  //   firstname: "",
-  //   lastname: "",
-  //   email: "",
-  //   website: "",
-  //   message: "",
-  // });
-  // const [user, setUser] = React.useState();
   const contactSchma = Yup.object().shape({
     firstname: Yup.string()
       .min(3, "Too Short")
@@ -55,7 +46,6 @@ export default function contact() {
   const onContact = async (user: any) => {
     try {
       const response = await axios.post("/api/contact", user);
-      console.log("i am in the try block");
       router.push("/");
     } catch (error: any) {
       console.log("on contact page failed", error.mesage);
