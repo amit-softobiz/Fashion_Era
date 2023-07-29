@@ -1,7 +1,7 @@
 // Video.js
 import React from 'react';
 
-const Video = ({ title, description, image, price,id }) => {
+const Video = ({ title, description, image, price}) => {
   return (
     <div className="video-container bg-white rounded-lg shadow-md p-4 mx-2 my-4 max-w-xs">
       {/* <img src="https://picsum.photos/200/300" alt="" className="rounded-lg" /> */}

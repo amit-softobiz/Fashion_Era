@@ -4,7 +4,7 @@ import HeaderNavLink from './HeaderNavLink';
 import SearchField from './SearchField';
 
 const menuItems = [
-  { label: `Home`, url: `/` },
+  { label: `Home`, url: `/home` },
   { label: `Shop`, url: `/shop` },
   { label: `Collection`, url: `/Collection` },
   { label: `ContactUs`, url: `/contact` },
