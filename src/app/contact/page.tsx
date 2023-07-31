@@ -139,7 +139,7 @@ export default function contact() {
       name="message"
       onChange={formik.handleChange}
       value={formik.values.message}
-      rows="4"
+      // rows="4"
       className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
     />
     {formik.errors.message && formik.touched.message && (
