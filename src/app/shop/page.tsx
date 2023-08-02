@@ -1,24 +1,50 @@
 // App.js
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect ,useState } from 'react';
 import Video from "@/cards/ShopCard/ShopCard"
-// import './App.css'; // Import the CSS file for styling
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-function App() {
+// import './App.css'; // Import the CSS file for styling
+interface Video {
+  title: string;
+  image: string;
+  price: number;
+  description: string;
+}
+
+
+
+ function App() {
   // let Videos = 
 
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(1000);
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
+  const [videos, setVideos] = useState<Video[]>([]);
 
-  // Function to filter videos based on selected filters
-  const filteredVideos = Videos.filter((video) => {
-    const price = parseInt(video.price);
-    const colorMatch = selectedColors.length === 0 || selectedColors.includes(video.color);
-    const tagMatch = selectedTags.length === 0 || selectedTags.includes(video.tag);
-    return price >= minPrice && price <= maxPrice && colorMatch && tagMatch;
-  });
+  useEffect(() => {
+    // Fetch videos from JSON server when the component mounts
+    axios.get("http://localhost:4000/videos")
+      .then(response => {
+        setVideos(response.data);
+        
+      })
+    
+      .catch(error => {
+        toast.error("Error fetching videos:", error);
+      });
+  }, []); 
+  
+  // // Function to filter videos based on selected filters
+  // const filteredVideos = videos.filter((video) => {
+  //   const price = parseInt(video.price);
+  //   const colorMatch = selectedColors.length === 0 || selectedColors.includes(video.color);
+  //   const tagMatch = selectedTags.length === 0 || selectedTags.includes(video.tag);
+  //   return price >= minPrice && price <= maxPrice && colorMatch && tagMatch;
+  // });
 
 
   
@@ -110,13 +136,12 @@ function App() {
       {/* Main Content - Width 70% */}
       <div className="w-6/10 p-4">
         <div className="flex flex-wrap justify-between">
-          {Videos.map((video, index) => (
+          {videos.map((video, index) => (
             <div key={index} className="w-1/4 p-2">
               <Video
                 image={video.image}
                 title={video.title}
-                description={video.description}
-                price={video.price}
+                description={video.description} price={video.price}           
               />
             </div>
           ))}
