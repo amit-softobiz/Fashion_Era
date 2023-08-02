@@ -388,5 +388,28 @@
       "image": "https://preview.colorlib.com/theme/fashi/img/products/women-4.jpg.webp",
       "price": 24.99
     }
+  ],
+  "slides":[
+    {
+      "id":1,
+      "title":"img1",
+      "img":"https://img.freepik.com/free-photo/full-length-portrait-happy-excited-woman-bright-colorful-clothes-holding-shopping-bags-while-standing-showing-peace-gesture-isolated-green-wall_231208-2678.jpg?w=740&t=st=1690612793~exp=1690613393~hmac=2e9f010480de8bee6686f6d2ddd035fe7c3f54d6365f5aef064d3f73540d39c1"
+    },
+    {
+      "id":2,
+      "title":"img2",
+      "img":"https://media.istockphoto.com/id/506317910/photo/beautiful-little-girl-model-wearing-a-leopard-dress-and-sunglass.jpg?s=1024x1024&w=is&k=20&c=AYlxOvgD6IS6z-dCtAKLJh2qefNI1XJkPG52TS1Pa8g="
+    },
+    {
+      "id":3,
+      "title":"img3",
+      "img":"https://img.freepik.com/free-photo/full-length-portrait-happy-excited-woman-bright-colorful-clothes-holding-shopping-bags-while-standing-showing-peace-gesture-isolated-green-wall_231208-2678.jpg?w=740&t=st=1690612793~exp=1690613393~hmac=2e9f010480de8bee6686f6d2ddd035fe7c3f54d6365f5aef064d3f73540d39c1"
+    }
+  ],
+  "banner":[
+    {"img":"https://preview.colorlib.com/theme/fashi/img/banner-1.jpg.webp","title":"Men"},
+    {"img":"https://preview.colorlib.com/theme/fashi/img/banner-2.jpg.webp","title":"Women"},
+    {"img":"https://preview.colorlib.com/theme/fashi/img/banner-3.jpg.webp","title":"Kids"}
   ]
+
 }
