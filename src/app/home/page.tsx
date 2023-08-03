@@ -11,9 +11,9 @@ export default async function HomePage() {
   const slidesData = await axios.get("http://localhost:4000/slides");
   const banner = await axios.get("http://localhost:4000/banner");
 
-  const slides = slidesData.data.map((slide, index) => (
+  const slides = slidesData.data.map((slide:any, index:any) => (
     <div key={index}>
-      <img src={slide.img} alt={slide.title} />
+      <img src={slide.img} alt={slide.title} />               
     </div>
   ));
 
@@ -32,45 +32,40 @@ export default async function HomePage() {
       </Carousel>
       
       <div className="flex flex-wrap justify-center">
-      {banner.data.map((bannerItem, index) => (
+      {banner.data.map((bannerItem:any,index:any) => (
           <Banner
+          key={index}
           imageSrc={bannerItem.img}
           title={bannerItem.title}
         />
         ))}
       </div>
 
-      <section className="women-banner spad">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-3">
-              <div
-                className="product-large set-bg"
-                style={{
-                  backgroundImage:
-                    "url('https://cdn.shopify.com/s/files/1/0491/3204/4455/products/BJ0A2700_360x.jpg?v=1665779449')",
-                }}
-              >
-                <h2>Women’s</h2>
-                <a href="#">Discover More</a>
-              </div>
-            </div>
-            <div className="col-lg-8 offset-lg-1">
-              <div className="filter-control">
-                <ul>
-                  <li className="active">Clothings</li>
-                  <li>HandBag</li>
-                  <li>Shoes</li>
-                  <li>Accessories</li>
-                </ul>
-              </div>
-              <div className="product-slider owl-carousel owl-loaded owl-drag">
-                {/* Owl carousel items go here */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<div className="flex">
+
+  <div className="flex-2">
+    <img src="https://cdn.shopify.com/s/files/1/0491/3204/4455/products/BJ0A2700_360x.jpg?v=1665779449" alt="First Image" className="w-full h-auto"/>
+  </div>
+
+
+  <div className="flex-1">
+  <Carousel
+        autoPlay
+        infiniteLoop
+        showStatus={false}
+        showThumbs={false}
+        showArrows={false}
+        interval={3000}
+        className="h-50"
+      >
+        {slides}
+      </Carousel>
+  </div>
+</div>
+
+
+
+      
       <div className="text-center mt-8">
         <h1 className="text-3xl font-bold">Welcome to Our eCommerce Website</h1>
         <p className="text-lg">
@@ -85,7 +80,7 @@ export default async function HomePage() {
       </div>
 
       <div className="flex flex-wrap justify-center">
-        {productsData.data.map((product, index) => (
+        {productsData.data.map((product:any, index:any) => (
           <ProductCard
             key={index}
             name={product.name}
@@ -94,8 +89,31 @@ export default async function HomePage() {
           />
         ))}
       </div>
+      <div className="flex">
+
+
+  <div className="flex-1">
+  <Carousel
+        autoPlay
+        infiniteLoop
+        showStatus={false}
+        showThumbs={false}
+        showArrows={false}
+        interval={3000}
+        className="h-50"
+      >
+        {slides}
+      </Carousel>
+  </div>
+  
+  <div className="flex-2">
+    <img src="https://cdn.shopify.com/s/files/1/0491/3204/4455/products/BJ0A2700_360x.jpg?v=1665779449" alt="First Image" className="w-full h-auto"/>
+  </div>
+
+</div>
 
       <DealOfTheWeek />
     </>
   );
 }
+
