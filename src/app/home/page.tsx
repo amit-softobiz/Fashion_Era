@@ -2,38 +2,17 @@
 import DealOfTheWeek from "@/components/DealOfTheWeek";
 import ProductCard from "@/components/ProductCard";
 import Banner from "@/components/banner";
+import axios from "axios";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-// Example JSON data for products
-const productsData = {
-  products: [
-    {
-      name: "Product 1",
-      image: "https://preview.colorlib.com/theme/fashi/img/products/women-1.jpg.webp",
-      price: 19.99,
-    },
-    {
-      name: "Product 2",
-      image: "https://preview.colorlib.com/theme/fashi/img/products/women-2.jpg.webp",
-      price: 29.99,
-    },
-    {
-      name: "Product 3",
-      image: "https://preview.colorlib.com/theme/fashi/img/products/women-3.jpg.webp",
-      price: 9.99,
-    },
-    {
-      name: "Product 4",
-      image: "https://preview.colorlib.com/theme/fashi/img/products/women-4.jpg.webp",
-      price: 24.99,
-    },
-    // Add more products as needed
-  ],
-};
 
-export default function HomePage() {
-  const slides = [
+// Example JSON data for products
+
+
+export default async function HomePage() {
+  const productsData = await axios.get("http://localhost:4000/productss");
+   const slides = [
     <div key={1}>
       
       <img src="https://media.istockphoto.com/id/506317910/photo/beautiful-little-girl-model-wearing-a-leopard-dress-and-sunglass.jpg?s=1024x1024&w=is&k=20&c=AYlxOvgD6IS6z-dCtAKLJh2qefNI1XJkPG52TS1Pa8g=" alt="Slide 1" />
@@ -97,7 +76,7 @@ export default function HomePage() {
       </div>
     
       <div className="flex flex-wrap justify-center">
-      {productsData.products.map((product, index) => (
+      {productsData.data.map((product, index) => (
         <ProductCard
           key={index}
           name={product.name}
