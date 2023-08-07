@@ -388,5 +388,78 @@
       "image": "https://preview.colorlib.com/theme/fashi/img/products/women-4.jpg.webp",
       "price": 24.99
     }
+  ],   "videos": [
+    {
+      "id": 1,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-1.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 2,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-2.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 3,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-3.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 4,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-4.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 5,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-5.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 6,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 7,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-7.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 8,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-8.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 9,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-9.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    },
+    {
+      "id": 10,
+      "title": "This is react.js",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-10.jpg.webp",
+      "price": "5k",
+      "description": "sakgghf"
+    }
   ]
+
+
 }

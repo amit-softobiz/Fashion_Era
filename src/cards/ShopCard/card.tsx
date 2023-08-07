@@ -1,5 +1,6 @@
 // App.js
 'use client'
+import Link from 'next/link';
 import React, { useEffect ,useState } from 'react';
 import Video from "@/cards/ShopCard/ShopCard"
 import axios from 'axios';
@@ -8,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // import './App.css'; // Import the CSS file for styling
 interface Video {
+  id:number;
   title: string;
   image: string;
   price: number;
@@ -138,11 +140,14 @@ interface Video {
         <div className="flex flex-wrap justify-between">
           {videos.map((video, index) => (
             <div key={index} className="w-1/4 p-2">
+               <Link href={`/shop/${video.id}`} as={`/shop/${video.id}`}>
               <Video
+              
                 image={video.image}
                 title={video.title}
                 description={video.description} price={video.price}           
               />
+              </Link>
             </div>
           ))}
         </div>
