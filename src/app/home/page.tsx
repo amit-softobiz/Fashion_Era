@@ -5,13 +5,21 @@ import Banner from "@/components/banner";
 import axios from "axios";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { number } from "yup";
 
 export default async function HomePage() {
   const productsData = await axios.get("http://localhost:4000/productss");
   const slidesData = await axios.get("http://localhost:4000/slides");
   const banner = await axios.get("http://localhost:4000/banner");
 
-  const slides = slidesData.data.map((slide:any, index:any) => (
+  interface SlicedData{
+    id:number,
+    img:string,
+    title:string
+
+  }
+
+  const slides = slidesData.data.map((slide:SlicedData, index:number) => (
     <div key={index}>
       <img src={slide.img} alt={slide.title} />               
     </div>
