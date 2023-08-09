@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "FASHION_ERA",
   description: "Digital-Fashion-Store website using NEXTJS and Material UI",
+  
 };
 
 export default function RootLayout({
