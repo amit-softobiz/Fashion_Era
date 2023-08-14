@@ -18,7 +18,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const [video, setVideo] = useState<Video | null>(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/videos/${params.slug}`)
+    axios.get(`http://localhost:4000/shopproducts/${params.slug}`)
       .then(response => {
         setVideo(response.data);
       })

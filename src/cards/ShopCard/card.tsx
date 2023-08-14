@@ -14,6 +14,8 @@ interface Video {
   image: string;
   price: number;
   description: string;
+  tags:string;
+  brand:string;
 }
 
 
@@ -29,7 +31,7 @@ interface Video {
 
   useEffect(() => {
     // Fetch videos from JSON server when the component mounts
-    axios.get("http://localhost:4000/videos")
+    axios.get("http://localhost:4000/shopproducts")
       .then(response => {
         setVideos(response.data);
         
@@ -40,13 +42,13 @@ interface Video {
       });
   }, []); 
   
-  // // Function to filter videos based on selected filters
-  // const filteredVideos = videos.filter((video) => {
-  //   const price = parseInt(video.price);
-  //   const colorMatch = selectedColors.length === 0 || selectedColors.includes(video.color);
-  //   const tagMatch = selectedTags.length === 0 || selectedTags.includes(video.tag);
-  //   return price >= minPrice && price <= maxPrice && colorMatch && tagMatch;
-  // });
+  // Function to filter videos based on selected filters
+  const filteredVideos = videos.filter((video) => {
+    const price = parseInt(video.price);
+    const colorMatch = selectedColors.length === 0 || selectedColors.includes(video.color);
+    const tagMatch = selectedTags.length === 0 || selectedTags.includes(video.tag);
+    return price >= minPrice && price <= maxPrice && colorMatch && tagMatch;
+  });
 
 
   
