@@ -391,33 +391,6 @@
   ],
   "shopproducts": [
     {
-      "id": 1,
-      "title": "This is react.js",
-      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-1.jpg.webp",
-      "price": 5000,
-      "description": "sakgghf",
-      "tags": "programming",
-      "brand": "Brand A"
-    },
-    {
-      "id": 3,
-      "title": "This is react.js",
-      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-3.jpg.webp",
-      "price": 5000,
-      "description": "sakgghf",
-      "tags": "programming",
-      "brand": "Brand C"
-    },
-    {
-      "id": 5,
-      "title": "Awesome Tutorial",
-      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-5.jpg.webp",
-      "price": 3000,
-      "description": "A detailed tutorial on a certain topic.",
-      "tags": "tutorial",
-      "brand": "Brand E"
-    },
-    {
       "id": 6,
       "title": "Web Development Basics",
       "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
@@ -427,22 +400,19 @@
       "brand": "Brand F"
     },
     {
-      "id": 7,
-      "title": "Design Principles",
-      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-7.jpg.webp",
-      "price": 4000,
-      "description": "Exploring the principles of good design.",
-      "tags": "design",
-      "brand": "Brand G"
+      "title": "samihvhggggggggggggg",
+      "image": "https://fastly.picsum.photos/id/141/400/300.jpg?hmac=z4AJKdSSRpF3HGolT05qVX-t_m6I5ft_6J4QO5OQJ5E",
+      "id": 10
     },
     {
-      "id": 8,
-      "title": "Machine Learning Intro",
-      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-8.jpg.webp",
-      "price": 6000,
-      "description": "An introduction to machine learning concepts.",
-      "tags": "machine learning",
-      "brand": "Brand H"
+      "title": "patel",
+      "image": "https://picsum.photos/id/1/200/300",
+      "id": 11
+    },
+    {
+      "title": "ahmad",
+      "image": "https://picsum.photos/id/1/200/300",
+      "id": 12
     }
   ]
 }
