@@ -400,19 +400,60 @@
       "brand": "Brand F"
     },
     {
-      "title": "samihvhggggggggggggg",
-      "image": "https://fastly.picsum.photos/id/141/400/300.jpg?hmac=z4AJKdSSRpF3HGolT05qVX-t_m6I5ft_6J4QO5OQJ5E",
-      "id": 10
+      "id": 6,
+      "title": "Web Development Basics",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
+      "price": 2000,
+      "description": "Introduction to web development concepts.",
+      "tags": "web development",
+      "brand": "Brand F"
     },
     {
-      "title": "patel",
-      "image": "https://picsum.photos/id/1/200/300",
-      "id": 11
+      "id": 6,
+      "title": "Web Development Basics",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
+      "price": 2000,
+      "description": "Introduction to web development concepts.",
+      "tags": "web development",
+      "brand": "Brand F"
     },
     {
-      "title": "ahmad",
-      "image": "https://picsum.photos/id/1/200/300",
-      "id": 12
+      "id": 6,
+      "title": "Web Development Basics",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
+      "price": 2000,
+      "description": "Introduction to web development concepts.",
+      "tags": "web development",
+      "brand": "Brand F"
+    },
+    {
+      "id": 6,
+      "title": "Web Development Basics",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
+      "price": 2000,
+      "description": "Introduction to web development concepts.",
+      "tags": "web development",
+      "brand": "Brand F"
+    },
+    {
+      "id": 6,
+      "title": "Web Development Basics",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
+      "price": 2000,
+      "description": "Introduction to web development concepts.",
+      "tags": "web development",
+      "brand": "Brand F"
+    },
+    {
+      "id": 6,
+      "title": "Web Developmen",
+      "image": "https://preview.colorlib.com/theme/fashi/img/products/product-6.jpg.webp",
+      "price": 2000,
+      "description": "Introduction to web development concepts.",
+      "tags": "web development",
+      "brand": "Brand F"
     }
+
+   
   ]
 }

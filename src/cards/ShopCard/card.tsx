@@ -55,7 +55,7 @@ interface Video {
   return (
     <div className="w-full flex">
       {/* Sidebar - Width 30% */}
-      <div className="w-3/10 bg-gray-200 p-4">
+      <div className="w-3/10 bg-gray-200 p-4 sidebar">
         <h2 className="text-xl font-semibold mb-4">Categories</h2>
         <div className="mb-4">
           <label className="flex items-center">
@@ -88,7 +88,7 @@ interface Video {
           </label>
         </div>
         <h2 className="text-xl font-semibold mb-4 mt-6">Price Range</h2>
-        <div className="flex items-center mb-4">
+        <div className="flex items-center mb-4 flex-wrap">
           <span className="mr-2">Min:</span>
           <input
             type="number"
@@ -139,21 +139,42 @@ interface Video {
       </div>
       {/* Main Content - Width 70% */}
       <div className="w-6/10 p-4">
-        <div className="flex flex-wrap justify-between">
-          {videos.map((video, index) => (
-            <div key={index} className="w-1/4 p-2">
-               <Link href={`/shop/${video.id}`} as={`/shop/${video.id}`}>
-              <Video
-              
-                image={video.image}
-                title={video.title}
-                description={video.description} price={video.price}           
+  <div className="flex flex-wrap justify-between">
+    {videos.map((video, index) => (
+      <div key={index} className="w-1/4 p-2 relative">
+        <Link href={`/shop/${video.id}`} as={`/shop/${video.id}`}>
+          <div className="group relative">
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <img
+                src={video.image}
+                alt={video.title}
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
               />
-              </Link>
+              <div className="absolute inset-0 flex items-end justify-end opacity-0 group-hover:opacity-100">
+                <button className="bg-green-500 text-white px-2 py-1 rounded-md">
+                  Add to Cart
+                </button>
+              </div>
             </div>
-          ))}
-        </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <span aria-hidden="true" className="absolute inset-0" />
+                  {video.title}
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">{video.description}</p>
+              </div>
+              <p className="text-sm font-medium text-gray-900">{video.price}</p>
+            </div>
+          </div>
+        </Link>
       </div>
+    ))}
+  </div>
+</div>
+
+
+
     </div>
   );
 }
